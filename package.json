@@ -8,7 +8,7 @@
     "build": "./node_modules/.bin/babel -d lib/ src/",
     "watch": "babel --watch -d lib/ src/",
     "prepublish": "npm run build",
-    "preinstall": "npm run prepublish"
+    "postinstall": "npm run prepublish"
   },
   "repository": {
     "type": "git",
